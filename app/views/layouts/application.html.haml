@@ -9,5 +9,9 @@
   = csrf_meta_tags
 
 %body
+  %main
+    .alerts
+      %p.notice= notice
+      %p.alert= alert
 
-= yield
+    = yield
