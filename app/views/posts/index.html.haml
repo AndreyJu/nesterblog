@@ -1,0 +1,11 @@
+%h1 Index
+
+#posts
+  - @posts.each do |post|
+    .post
+    .post_content
+      .title
+        %h2= link_to post.title, post
+
+  = link_to "new", new_post_path
+      
