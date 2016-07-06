@@ -1,0 +1,10 @@
+%h1 Current user info
+
+= link_to (image_tag @user.avatar.url(:thumb))
+
+%h2= @user.nickname
+%h2= @user.email
+
+.buttons
+  = link_to "Edit profile", edit_user_registration_path(@user)
+  = link_to "Destroy session", destroy_user_session_path, method: :delete
