@@ -13,5 +13,7 @@
     .alerts
       %p.notice= notice
       %p.alert= alert
+  .sign_in_up
+    = link_to "Create account", new_user_registration_path
 
-    = yield
+= yield
