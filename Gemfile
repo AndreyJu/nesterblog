@@ -15,6 +15,9 @@ gem 'haml', '~> 4.0.5'
 gem 'simple_form', '~> 3.0.2'
 gem 'devise'
 gem 'paperclip', '~> 4.2.0'
+gem 'closure_tree'
 
 gem 'spring'
 gem 'stack_rescue', group: :development
+
+gem 'pg', group: :production

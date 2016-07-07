@@ -1,5 +1,4 @@
 %h1 Index
-
 = link_to "Sign_in", new_user_session_path
 
 #posts
@@ -8,6 +7,9 @@
     .post_content
       .title
         %h2= link_to post.title, post
+    
+    %p add your comment
+    = render 'comments/new_comment'
 
   = link_to "new", new_post_path
       

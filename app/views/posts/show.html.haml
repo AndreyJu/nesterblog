@@ -6,6 +6,8 @@
 .homelink
 = link_to "Posts", root_path
 
+= render 'comments/index_comments'
+
 .postedits
   - if @post.user == current_user
     = link_to "Edit", edit_post_path(@post), class: "button"
